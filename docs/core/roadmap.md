@@ -28,7 +28,7 @@ The schedule starts on 30 October; earlier proposed dates are superseded. About 
 
 | ID | Target window (2026) | Outcome and entry/exit gates | Effort and main risk | Status |
 | --- | --- | --- | --- | --- |
-| M1 | 30 Oct–10 Nov | Five-record feasibility evidence and a pass/revise/stop decision. Current contract: [milestone.md](milestone.md). | 10–12 hours; source authority, permissions, fidelity | Approved; preparation established, experiments pending |
+| M1 | 30 Oct–10 Nov | Five-record feasibility evidence and a pass/revise/stop decision. Current contract: [milestone.md](milestone.md). | 10–12 hours; source authority, permissions, fidelity | Approved; DL-F01 source inspection partial; E1 incomplete, E2–E5 pending |
 | M2 | 11–17 Nov | After subsequent authorization: repeatable bounded processing and 15–20 reviewed records, or 8–10 fallback records. Requires M1 evidence and permitted operations. | 3–5 hours for fallback expansion; 6–8 for full collection; review throughput | Roadmap only; not authorized to begin |
 | M3 | 18–23 Nov | After subsequent authorization: static browse/filter/search/detail flow with working citations and accessibility checks. Requires approved records. | 4–5 hours; scope and usability | Roadmap only; frontend implementation not authorized |
 | M4 | 24–26 Nov | Final validation, deployment rehearsal, and separately authorized public deployment. Requires republication clearance and content/operational checks. | 3–4 hours; reuse and release readiness | Roadmap only; public deployment not authorized |

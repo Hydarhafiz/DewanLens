@@ -1,6 +1,6 @@
 # M1 — Five-record feasibility
 
-Approved: 30 October 2026 with the user's refinements. Target decision: 10 November 2026; public MVP deadline remains 30 November. **Status: prepared; source research and all experiments are pending.** Only M1 is active. [Roadmap](roadmap.md) owns later scope and authorization; [architecture](architecture.md) owns minimal shared contracts; [planning sources](planning-sources.md) distinguishes observed facts and authority gaps.
+Approved: 30 October 2026 with the user's refinements. Target decision: 10 November 2026; public MVP deadline remains 30 November. **Status: preparation complete; DL-F01 source inspection is partial; human boundary and permission review is pending. E1 is incomplete; E2–E5 have not run.** Only M1 is active. [Roadmap](roadmap.md) owns later scope and authorization; [architecture](architecture.md) owns minimal shared contracts; [planning sources](planning-sources.md) distinguishes observed facts and authority gaps.
 
 ## Outcome and limits
 
@@ -30,7 +30,7 @@ Starting labels: Teknologi & digital; Ekonomi & kewangan; Pengangkutan & infrast
 
 ### DL-F01 — Establish usable sources
 
-- **Type / status:** research / prepared; research not executed.
+- **Type / status:** research / in progress; bounded metadata inspection recorded, acceptance pending.
 - **Outcome and scope:** inspect two sitting days, identify five candidate spans and controls, establish traceability, and document P-ACCESS, P-LLM and P-PUBLIC independently. No product code or automated verification tests in this research feature.
 - **Entry:** approved architecture/M1 and preserved existing user work.
 - **F01-01:** E1 technical findings have direct source evidence; each accepted segment has date, speaker, observed status, precise boundaries and a verified official citation. Label any incomplete/unavailable source comparison.
@@ -66,7 +66,7 @@ Starting labels: Teknologi & digital; Ekonomi & kewangan; Pengangkutan & infrast
 
 ## Five experiments and execution order
 
-Run E1 first; freeze the corpus/references; implement mocked validation/replay; run authorized real processing for E2–E4 only after permission and budget gates; then perform E5. All experiments currently have status **not run**.
+Run E1 first; freeze the corpus/references; implement mocked validation/replay; run authorized real processing for E2–E4 only after permission and budget gates; then perform E5. E1 has partial metadata/access observations but does not meet acceptance; E2–E5 remain **not run**.
 
 | ID | Inputs and tool/fixture strategy | Exact accepted artifact | Acceptance, failure modes, and decision |
 | --- | --- | --- | --- |
@@ -100,4 +100,4 @@ Promote durable architecture/source decisions into their canonical documents. Pu
 
 ## Current evidence and next checkpoint
 
-Planning preparation is the only established outcome. No source manifest, reference annotations, processing code, generated records, evaluation results or human approvals exist yet. The next substantive work is DL-F01's bounded source/access investigation and candidate preparation, followed by human boundary/reference review and any unresolved important authority decision. Paid model calls remain a later explicit checkpoint. Public-republication uncertainty must remain visible without being mistaken for either source-access or provider-processing permission.
+DL-F01 has partial source metadata and access observations in [planning-sources.md](planning-sources.md), but no admitted corpus or accepted segment boundaries. No source manifest, reference annotations, processing code, generated records, evaluation results or human approvals exist. The five candidate cues remain proposals, the three controls are not frozen, and P-ACCESS, P-LLM and P-PUBLIC remain unknown. The next checkpoint is human review of boundaries and controls plus resolution of the applicable source and processing basis. E1 is incomplete; E2–E5 have not run. Paid model calls remain a later explicit checkpoint. Public-republication uncertainty must remain visible without being mistaken for source-access or provider-processing permission.

@@ -22,6 +22,49 @@ Plan recorded: 30 October 2026. Public-source observations below come from the *
 | [Parliament public page](https://www.parlimen.gov.my/pac/?lang=bm) | VERIFIED limited observation: Parliament copyright reservation | A generic footer does not establish Hansard-specific reuse terms or a prohibition covering every intended operation |
 | [Hansard robots location](https://hansard.parlimen.gov.my/robots.txt) | UNVERIFIED: retrieval failed through the discovery tool | A fetch failure is neither absence of rules nor permission. Check via an appropriate bounded method before automated collection |
 
+## DL-F01 bounded source inspection — 31 October 2026
+
+This update records source metadata and access observations only; it does not admit a corpus or approve candidate boundaries.
+
+### Technical access and traceability
+
+| Record | Direct official citation | Observed status and identification cues | Boundary/version limits |
+| --- | --- | --- | --- |
+| 14 October 2026 | [Dewan Rakyat, 14 October](https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-14) | The date-level URL opened without a query parameter. The page identifies the sitting date and chamber and displays `Draf`; speaker blocks carry repeated time cues and draft markers. The Tebrau question 5 cue appears at about 10:40; Puncak Borneo appears at about 17:20. | No stable speech-level URL or anchor was verified. A timestamp can repeat across blocks and does not identify a unique span. No origin response validator, immutable version ID, or complete-text comparison was obtained. |
+| 15 October 2026 | [Dewan Rakyat, 15 October](https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-15) | The date-level URL opened without a query parameter. The page identifies the sitting date and chamber and displays `Draf`; speaker blocks carry repeated time cues and draft markers. Rasah question 3 appears at about 11:10; Bagan begins at about 12:41; Betong appears at about 16:00 and 16:10. | No stable speech-level URL or anchor was verified. A timestamp can repeat across blocks and does not identify a unique span. No origin response validator, immutable version ID, or complete-text comparison was obtained. |
+
+The web reader returned transcript-body excerpts while opening the official pages. Later page-open requests intended only to verify date/status metadata also returned body excerpts. After recognizing this behavior, no further targeted transcript searches or content analysis were performed. The excerpts were not saved as local files, quoted into this document, or committed; no labels, summaries, highlights, or human reference annotations were generated. This event is an unresolved provider-processing exposure, not P-LLM clearance. Provider retention and training terms for this tool were not established. Do not send more transcript text to a hosted model while this remains unresolved.
+
+The date-level URL was usable in the bounded browser check; this establishes current navigability only, not long-term stability. The `search=undefined` parameter is unnecessary for the 14 October link and should not be used as a citation dependency. The 15 October queryless link opened; a query-bearing variant timed out. The browser output showed multiple speaker/time blocks, but it did not provide raw HTML, origin headers, an extraction API, or a completeness guarantee. These observations do not establish an automatic acquisition method or reliable parser. Use date-level citations with speaker/date/time/section cues; never invent speech anchors from display order or DOM position.
+
+The official [Hansard catalogue](https://hansard.parlimen.gov.my/katalog/kamar-khas) describes daily publication on the next working day. Both selected pages still displayed draft status during this check. The status lifecycle and the point at which a draft becomes final remain unknown. The Ministry of Digital's [system handover release](https://www.digital.gov.my/en-GB/siaran/Kementerian-Digital-Serah-Sistem-Hansard-Parlimen-Kepada-Parlimen-Malaysia) says the Digital Hansard system does not replace Parliament's official Hansard documents. The [official Hansard listing](https://parlimen.gov.my/hansard-dewan-rakyat.html?uweb=dr) timed out in the available browser tool, and no actual linked PDF or document correspondence for either sitting was verified. Do not guess PDF URLs or declare the digital page text complete or authoritative over an official document.
+
+The Parliament site displays a reserved-copyright notice. Its 2026 [Hansard preparation guide](https://www.parlimen.gov.my/images/webuser/dn/Buku%20Panduan%20Penyediaan%20Verbatim%20Penyata%20Rasmi%20Hansard.pdf) also carries a written-permission notice for reproduction of that guide. That notice applies to the guide itself; it does not settle rights in the Hansard transcript, excerpts, summaries, model inputs, or public Git fixtures. The Hansard `robots.txt` endpoint was inaccessible through the browser tool, and a local metadata-only request could not resolve the host. Neither failure is permission or evidence that no access rules exist.
+
+### Proposed candidate boundaries — human review pending
+
+The following are identification cues from the approved M1 plan cross-checked against the date pages. They are proposals only: no accepted start/end offsets, frozen boundaries, category references, or source-point checklist exist. The human owner must review the official page directly and decide whether to include the full reply, a connected follow-up, a subsection of a longer speech, or an entire multi-topic contribution.
+
+| Candidate | Proposed source boundary cue | Provenance and unresolved boundary question |
+| --- | --- | --- |
+| A | 14 October, about 10:40: Tuan Jimmy Puah Wee Tse (Tebrau), question 5 and the Economy Minister's response. | [14 October page](https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-14). Confirm which continuation blocks and any follow-up are part of the discussion, and the exact end before the next independent question. |
+| B | 14 October, about 17:20: Datuk Willie anak Mongin (Puncak Borneo), the rural-mobility portion within a longer contribution. | [14 October page](https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-14). Confirm the exact topic transition and whether the selected span is complete enough to preserve context; do not silently include or exclude adjacent topics. |
+| C | 15 October, about 11:10: Tuan Cha Kee Chin (Rasah), question 3 and the Health Minister's response. | [15 October page](https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-15). Confirm response continuation blocks, whether a follow-up belongs, and the exact end before the next question. |
+| D | 15 October, about 12:41–12:50: Tuan Lim Guan Eng (Bagan), the fiscal/enterprise portion identified in the approved plan. | [15 October page](https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-15). Confirm the source section and transition that delimit this topic within the wider contribution. |
+| E | 15 October, about 16:00–16:10: Dato Dr. Richard Rapu @ Aman anak Begri (Betong), proposed as the multi-topic contribution. | [15 October page](https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-15). Confirm the full speaker-turn end and whether preserving the whole contribution is preferable to a narrower topic span. |
+
+These cues do not satisfy F01-01's precise-boundary acceptance criterion. The three controls are also not yet source-frozen: the procedural turn, a short substantive turn, and an out-of-taxonomy turn must each be selected by human review from these two sitting pages and recorded outside the five publication candidates. The exact speaker, time, boundaries, and rationale for each control remain open; do not infer or invent them from the page-level observations above.
+
+### Permission state after bounded inspection
+
+| Gate | Current state | Evidence and consequence |
+| --- | --- | --- |
+| P-ACCESS | **Unknown** | Public date pages were technically readable, but robots/access rules were not retrieved; transcript retention, local fixture storage, and automated retrieval terms were not established. Do not automate, bulk-download, or retain transcript text until the applicable basis is clear. |
+| P-LLM | **Unknown; unresolved exposure recorded** | No provider was selected and no provider terms were checked. Transcript excerpts were returned to the hosted model context by the browser tool, so this inspection cannot be represented as having avoided external processing. Stop further transcript submission; determine the applicable processing and retention terms before any additional model use. |
+| P-PUBLIC | **Unknown** | Reserved-copyright notices and the separate guide's permission clause do not determine transcript reuse rights. No excerpt, summary, transcript fixture, or source text may be published or committed without an operation-specific reuse basis. |
+
+**Provisional DL-F01 disposition: REVISE / HOLD; the feature is incomplete.** The date pages are technically reachable, but accepted boundaries, controls, draft-to-final handling, official-document correspondence, and permitted retention are not established. No permitted evaluation corpus can yet be nominated under the current evidence. Reassess after the human boundary checkpoint and operation-specific permission evidence; stop only the affected operation if its basis remains unavailable.
+
 ## Separate permission decisions
 
 Use `unknown`, `permitted`, `restricted`, or `not-applicable`, with the evidence URL/document, observation date, applicable operation, restrictions, and decision owner. A term must be shown to apply to Hansard and the intended use; do not borrow licences from another government site.
